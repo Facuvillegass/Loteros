@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos.css" />
+
+    <title>Lotero´s!</title>
+  </head>
+
+  <body>
+    <div class="container text-center mt-5">
+      <h1>Lotero's!</h1>
+    </div>
+
+    <div
+      style="text-align: center; margin-top: 10px"
+      class="hidden"
+      id="divBtnBuscarDeNuevo"
+    >
+      <button type="button" class="btn btn-primary" id="btnBuscarDeNuevo">
+        Buscar de nuevo
+      </button>
+    </div>
+
+    <form
+      class="mt-5 mb-5 text-center"
+      style="width: 80%; margin-left: auto; margin-right: auto"
+      id="formLoteros"
+    >
+      <div class="mb-3">
+        <div class="pisos">
+          <label for="exampleInputEmail1" class="form-label"
+            >Cantidad de pisos</label
+          ><br />
+          <select
+            name="pisos"
+            id="pisos"
+            style="width: 100px"
+            class="text-center"
+            name="cantPisos"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+
+        <div class="habitaciones mt-4">
+          <label for="exampleInputEmail1" class="form-label"
+            >Cantidad de habitaciones</label
+          ><br />
+          <select
+            name="habitaciones"
+            id="habitaciones"
+            style="width: 100px"
+            class="text-center"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <div class="banios mt-4 mb-4">
+          <label for="exampleInputEmail1" class="form-label"
+            >Cantidad de baños</label
+          ><br />
+          <select
+            name="banios"
+            id="banios"
+            style="width: 100px"
+            class="text-center"
+          >
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Buscar casas</button>
+      </div>
+    </form>
+
+    <div id="idExplicacionBusqueda" class="text-center"></div>
+    <div
+      id="resultadosBusqueda"
+      class="text-center mt-5"
+      style="
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto 200px;
+        gap: 10px;
+      "
+    ></div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="codigo.js" type="module"></script>
+    <script src="data.js" type="module"></script>
+  </body>
+</html>
